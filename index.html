@@ -19,27 +19,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            position: relative;
-        }
-
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><path fill="white" d="M20 20 L30 20 L25 30 Z" /><path fill="white" d="M70 70 L80 70 L75 80 Z" /></svg>');
-            background-size: 50px 50px;
-            pointer-events: none;
         }
 
         .container {
             max-width: 900px;
             width: 100%;
             margin: 0 auto;
-            position: relative;
-            z-index: 1;
         }
 
         .card {
@@ -50,26 +35,11 @@
             box-shadow: 0 30px 80px rgba(139, 0, 0, 0.4);
             margin-bottom: 25px;
             border: 2px solid rgba(255, 215, 215, 0.5);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card::before {
-            content: 'YTI';
-            position: absolute;
-            top: -20px;
-            right: -20px;
-            font-size: 120px;
-            font-weight: 900;
-            color: rgba(205, 92, 92, 0.1);
-            transform: rotate(15deg);
-            pointer-events: none;
         }
 
         .logo-header {
             text-align: center;
             margin-bottom: 30px;
-            position: relative;
         }
 
         .logo-icon {
@@ -81,7 +51,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 10px 30px rgba(139, 0, 0, 0.3);
             border: 3px solid #fff;
         }
 
@@ -97,16 +66,13 @@
             margin-bottom: 10px;
             font-size: 32px;
             font-weight: 700;
-            letter-spacing: 1px;
             text-transform: uppercase;
-            text-shadow: 2px 2px 4px rgba(139, 0, 0, 0.1);
         }
 
         .subtitle {
             text-align: center;
             color: #b22222;
             font-size: 16px;
-            font-weight: 400;
             margin-bottom: 25px;
             padding-bottom: 20px;
             border-bottom: 2px dashed #cd5c5c;
@@ -114,7 +80,6 @@
 
         .form-group {
             margin-bottom: 25px;
-            position: relative;
         }
 
         label {
@@ -124,7 +89,6 @@
             font-weight: 600;
             font-size: 14px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
         label i {
@@ -140,14 +104,12 @@
             font-size: 15px;
             transition: all 0.3s ease;
             background: #fff9f9;
-            color: #333;
         }
 
         input:focus, textarea:focus {
             outline: none;
             border-color: #b22222;
             box-shadow: 0 0 0 4px rgba(178, 34, 34, 0.1);
-            background: white;
         }
 
         textarea {
@@ -160,10 +122,6 @@
             color: #b22222;
             margin-top: 5px;
             font-style: italic;
-        }
-
-        .lokasi-hint i {
-            margin-right: 5px;
         }
 
         .button-group {
@@ -183,31 +141,12 @@
             cursor: pointer;
             transition: all 0.3s ease;
             text-transform: uppercase;
-            letter-spacing: 1px;
             min-width: 220px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            transition: left 0.5s;
-        }
-
-        .btn:hover::before {
-            left: 100%;
         }
 
         .btn-primary {
             background: linear-gradient(135deg, #8b0000, #b22222);
             color: white;
-            box-shadow: 0 8px 25px rgba(139, 0, 0, 0.4);
         }
 
         .btn-primary:hover {
@@ -218,7 +157,6 @@
         .btn-secondary {
             background: linear-gradient(135deg, #cd5c5c, #b22222);
             color: white;
-            box-shadow: 0 8px 25px rgba(205, 92, 92, 0.4);
         }
 
         .btn-secondary:hover {
@@ -234,8 +172,6 @@
             display: none;
             text-align: center;
             border: 3px solid white;
-            box-shadow: 0 15px 40px rgba(139, 0, 0, 0.15);
-            position: relative;
         }
 
         #qr-container h3 {
@@ -250,7 +186,6 @@
             border-radius: 20px;
             padding: 15px;
             background: white;
-            box-shadow: 0 10px 30px rgba(139, 0, 0, 0.2);
             margin: 0 auto 20px;
             display: block;
             border: 3px solid #cd5c5c;
@@ -266,8 +201,6 @@
             padding: 12px 25px;
             background: white;
             border-radius: 50px;
-            box-shadow: 0 5px 15px rgba(139, 0, 0, 0.15);
-            font-weight: 500;
             border: 1px solid #cd5c5c;
             transition: all 0.3s;
             max-width: 100%;
@@ -276,7 +209,6 @@
         .qr-link:hover {
             background: #b22222;
             color: white;
-            transform: translateY(-2px);
         }
 
         .credit {
@@ -284,18 +216,13 @@
             color: white;
             margin-top: 20px;
             font-size: 16px;
-            font-weight: 400;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             padding: 18px;
             background: rgba(139, 0, 0, 0.3);
             border-radius: 60px;
             backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            letter-spacing: 1px;
         }
 
         .credit strong {
-            font-weight: 700;
             color: #ffd700;
             font-size: 18px;
         }
@@ -306,24 +233,16 @@
             padding: 25px;
             margin-top: 30px;
             border-left: 6px solid #b22222;
-            font-size: 15px;
             border: 2px solid #ffe5e5;
-            box-shadow: 0 5px 20px rgba(139, 0, 0, 0.05);
         }
 
         .data-preview h4 {
             color: #8b0000;
-            margin-bottom: 20px;
-            font-size: 18px;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            margin-bottom: 15px;
         }
 
         .data-preview p {
             margin: 12px 0;
-            color: #2d3748;
             padding: 8px;
             border-bottom: 1px dashed #cd5c5c;
         }
@@ -332,48 +251,6 @@
             color: #b22222;
             min-width: 100px;
             display: inline-block;
-            font-weight: 600;
-        }
-
-        @media (max-width: 768px) {
-            .card {
-                padding: 25px;
-            }
-            
-            .button-group {
-                flex-direction: column;
-            }
-            
-            .btn {
-                width: 100%;
-            }
-        }
-
-        .input-icon {
-            position: relative;
-        }
-
-        .input-icon i {
-            position: absolute;
-            left: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #cd5c5c;
-        }
-
-        .input-icon input {
-            padding-left: 45px;
-        }
-
-        /* Animasi loading untuk QR */
-        .loading {
-            animation: pulse 1.5s infinite;
-        }
-
-        @keyframes pulse {
-            0% { opacity: 0.6; }
-            50% { opacity: 1; }
-            100% { opacity: 0.6; }
         }
 
         .qr-note {
@@ -391,10 +268,34 @@
             padding: 10px;
             border-radius: 10px;
             font-size: 12px;
-            color: #333;
             word-break: break-all;
             margin-top: 15px;
-            border: 1px solid #cd5c5c;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                padding: 25px;
+            }
+            
+            .button-group {
+                flex-direction: column;
+            }
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #8b0000;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
 </head>
@@ -412,36 +313,24 @@
             <form id="dataForm">
                 <div class="form-group">
                     <label><i class="fas fa-user"></i> Nama Lengkap</label>
-                    <div class="input-icon">
-                        <i class="fas fa-user"></i>
-                        <input type="text" id="name" class="name" placeholder="Masukkan nama lengkap" required>
-                    </div>
+                    <input type="text" id="name" class="name" placeholder="Masukkan nama lengkap" required>
                 </div>
 
                 <div class="form-group">
                     <label><i class="fas fa-envelope"></i> Email</label>
-                    <div class="input-icon">
-                        <i class="fas fa-envelope"></i>
-                        <input type="email" id="email" class="email" placeholder="contoh@email.com" required>
-                    </div>
+                    <input type="email" id="email" class="email" placeholder="contoh@email.com" required>
                 </div>
 
                 <div class="form-group">
                     <label><i class="fas fa-globe"></i> Negara</label>
-                    <div class="input-icon">
-                        <i class="fas fa-globe"></i>
-                        <input type="text" id="country" class="country" placeholder="Indonesia" required>
-                    </div>
+                    <input type="text" id="country" class="country" placeholder="Indonesia" required>
                 </div>
 
                 <div class="form-group">
                     <label><i class="fas fa-link"></i> Link / Lokasi</label>
-                    <div class="input-icon">
-                        <i class="fas fa-link"></i>
-                        <input type="url" id="lokasi" class="lokasi" placeholder="https://example.com atau https://maps.app.goo.gl/..." required>
-                    </div>
+                    <input type="url" id="lokasi" class="lokasi" placeholder="https://example.com atau https://maps.google.com" required>
                     <div class="lokasi-hint">
-                        <i class="fas fa-info-circle"></i> Masukkan URL lengkap (contoh: https://www.google.com/maps/place/Monas atau https://tokopedia.com)
+                        <i class="fas fa-info-circle"></i> Masukkan URL lengkap dengan https://
                     </div>
                 </div>
 
@@ -462,9 +351,9 @@
 
             <div id="qr-container">
                 <h3>📱 QR CODE DARI LINK</h3>
-                <img id="qrcode" src="" alt="QR Code" class="loading">
+                <img id="qrcode" src="" alt="QR Code">
                 <div class="qr-note">
-                    <i class="fas fa-camera"></i> Scan dengan kamera untuk membuka link
+                    <i class="fas fa-camera"></i> Scan untuk membuka link
                 </div>
                 <div id="qrUrlDisplay" class="qr-url-display">
                     Link: -
@@ -476,10 +365,7 @@
             </div>
 
             <div id="dataPreview" class="data-preview" style="display: none;">
-                <h4>
-                    <i class="fas fa-eye" style="color: #b22222;"></i>
-                    PREVIEW DATA
-                </h4>
+                <h4><i class="fas fa-eye" style="color: #b22222;"></i> PREVIEW DATA</h4>
                 <p><strong>Nama:</strong> <span id="previewName"></span></p>
                 <p><strong>Email:</strong> <span id="previewEmail"></span></p>
                 <p><strong>Negara:</strong> <span id="previewCountry"></span></p>
@@ -493,76 +379,65 @@
         </div>
     </div>
 
-    <!-- Font Awesome untuk icon -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- jsPDF -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     
     <script>
-        // Fungsi untuk membuat QR Code dari link yang dimasukkan
-        function generateQRCode(text) {
-            // Pastikan text adalah URL yang valid
-            if (!text.startsWith('http://') && !text.startsWith('https://')) {
-                text = 'https://' + text;
+        // Fungsi untuk memformat URL
+        function formatUrl(url) {
+            url = url.trim();
+            if (!url.startsWith('http://') && !url.startsWith('https://')) {
+                return 'https://' + url;
             }
-            
-            // Gunakan API dengan parameter yang tepat
-            // Size diperbesar, margin ditambah, dan format data diencode dengan benar
-            return `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(text)}&margin=10&qzone=2&format=png`;
+            return url;
         }
 
-        // Fungsi untuk memvalidasi URL
-        function isValidUrl(string) {
-            try {
-                new URL(string);
-                return true;
-            } catch (_) {
-                return false;
-            }
+        // Fungsi untuk generate QR Code
+        function generateQRCode(url) {
+            // Gunakan API QR Server yang lebih stabil
+            return `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(url)}&margin=10`;
         }
 
         function processData() {
             // Validasi form
-            if (!validateForm()) {
-                alert('Harap isi semua field yang wajib diisi!');
-                return;
-            }
-
-            var phonenumber = "+6282133204329";
-
             var name = document.querySelector(".name").value;
             var email = document.querySelector(".email").value;
             var country = document.querySelector(".country").value;
             var lokasi = document.querySelector(".lokasi").value;
             var message = document.querySelector(".message").value;
 
-            // Update preview data
-            updatePreview(name, email, country, lokasi, message);
-
-            // PERBAIKAN: Gunakan langsung input dari field Lokasi sebagai link untuk QR Code
-            var linkUrl = lokasi;
-            
-            // Tambahkan https:// jika tidak ada protocol
-            if (!linkUrl.startsWith('http://') && !linkUrl.startsWith('https://')) {
-                linkUrl = 'https://' + linkUrl;
+            if (!name || !email || !country || !lokasi) {
+                alert('Harap isi semua field yang wajib diisi!');
+                return;
             }
 
-            // Buat URL API untuk generate QR Code
-            var qrApiUrl = generateQRCode(linkUrl);
+            // Format URL
+            var linkUrl = formatUrl(lokasi);
 
+            // Update preview
+            document.getElementById('previewName').textContent = name;
+            document.getElementById('previewEmail').textContent = email;
+            document.getElementById('previewCountry').textContent = country;
+            document.getElementById('previewLokasi').textContent = linkUrl;
+            document.getElementById('previewMessage').textContent = message || '-';
+            document.getElementById('dataPreview').style.display = 'block';
+
+            // Generate QR Code
+            var qrApiUrl = generateQRCode(linkUrl);
+            
             // Tampilkan QR Code
-            document.getElementById("qrcode").src = qrApiUrl;
+            var qrImg = document.getElementById("qrcode");
+            qrImg.src = qrApiUrl;
+            
             document.getElementById("qr-link").href = linkUrl;
             document.getElementById("qrUrlDisplay").innerHTML = '<i class="fas fa-link"></i> Link: ' + linkUrl;
             document.getElementById("qr-container").style.display = "block";
 
-            // Hapus class loading setelah gambar load
-            document.getElementById("qrcode").onload = function() {
-                this.classList.remove('loading');
-            };
-
-            // Siapkan teks WhatsApp
-            var url = "https://wa.me/" + phonenumber + "?text="
-                + "━━━━━━━━━━━━━━━━━━━━%0a"
+            // Kirim WhatsApp
+            var phonenumber = "+6282133204329";
+            var waText = "━━━━━━━━━━━━━━━━━━━━%0a"
                 + "   *YONO TEKNIK INDONESIA*%0a"
                 + "━━━━━━━━━━━━━━━━━━━━%0a%0a"
                 + "▬▬▬ *DATA FORM* ▬▬▬%0a%0a"
@@ -573,291 +448,232 @@
                 + "💬 *Pesan :* " + message + "%0a%0a"
                 + "━━━━━━━━━━━━━━━━━━━━%0a"
                 + "📅 " + new Date().toLocaleDateString('id-ID') + "%0a"
-                + "✨ *Yono Teknik Indonesia* ✨%0a"
-                + "━━━━━━━━━━━━━━━━━━━━";
+                + "✨ *Yono Teknik Indonesia* ✨";
 
-            // Buka WhatsApp
-            window.open(url, '_blank');
+            window.open("https://wa.me/" + phonenumber + "?text=" + waText, '_blank');
         }
 
-        function validateForm() {
-            var inputs = document.querySelectorAll(".name, .email, .country, .lokasi");
-            var isValid = true;
-            
-            for (var i = 0; i < inputs.length; i++) {
-                if (!inputs[i].value.trim()) {
-                    inputs[i].style.borderColor = "#8b0000";
-                    isValid = false;
-                } else {
-                    inputs[i].style.borderColor = "#ffe5e5";
-                }
-            }
-
-            // Validasi link
-            var lokasi = document.querySelector(".lokasi").value;
-            if (lokasi) {
-                var linkToCheck = lokasi;
-                if (!linkToCheck.startsWith('http://') && !linkToCheck.startsWith('https://')) {
-                    linkToCheck = 'https://' + linkToCheck;
-                }
-                if (!isValidUrl(linkToCheck)) {
-                    document.querySelector(".lokasi").style.borderColor = "#8b0000";
-                    alert('Harap masukkan link yang valid (contoh: https://google.com)');
-                    return false;
-                }
-            }
-
-            return isValid;
-        }
-
-        function updatePreview(name, email, country, lokasi, message) {
-            document.getElementById('previewName').textContent = name || '-';
-            document.getElementById('previewEmail').textContent = email || '-';
-            document.getElementById('previewCountry').textContent = country || '-';
-            document.getElementById('previewLokasi').textContent = lokasi || '-';
-            document.getElementById('previewMessage').textContent = message || '-';
-            document.getElementById('dataPreview').style.display = 'block';
-        }
-
-        function generatePDF() {
-            if (!validateForm()) {
-                alert('Harap isi semua field untuk generate PDF!');
-                return;
-            }
-
+        async function generatePDF() {
+            // Validasi form
             var name = document.querySelector(".name").value;
             var email = document.querySelector(".email").value;
             var country = document.querySelector(".country").value;
             var lokasi = document.querySelector(".lokasi").value;
             var message = document.querySelector(".message").value;
 
-            // Gunakan langsung input dari field Lokasi
-            var linkUrl = lokasi;
-            if (!linkUrl.startsWith('http://') && !linkUrl.startsWith('https://')) {
-                linkUrl = 'https://' + linkUrl;
+            if (!name || !email || !country || !lokasi) {
+                alert('Harap isi semua field untuk generate PDF!');
+                return;
             }
+
+            var linkUrl = formatUrl(lokasi);
             
-            // URL QR Code
-            var qrCodeUrl = generateQRCode(linkUrl);
+            // Tampilkan loading
+            alert('Membuat PDF, mohon tunggu...');
 
-            // Inisialisasi jsPDF
-            const { jsPDF } = window.jspdf;
-            const doc = new jsPDF({
-                orientation: 'portrait',
-                unit: 'mm',
-                format: 'a4'
-            });
+            try {
+                // Buat PDF dengan jsPDF
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF({
+                    orientation: 'portrait',
+                    unit: 'mm',
+                    format: 'a4'
+                });
 
-            // Warna tema merah Yono Teknik
-            const merahTua = [139, 0, 0];      // #8b0000
-            const merahSedang = [178, 34, 34];  // #b22222
-            const merahMuda = [205, 92, 92];    // #cd5c5c
+                // Warna tema
+                const merahTua = '#8b0000';
+                const merahSedang = '#b22222';
+                const merahMuda = '#cd5c5c';
 
-            // ===== HALAMAN 1 =====
-            
-            // Background
-            doc.setFillColor(255, 250, 250);
-            doc.rect(0, 0, 210, 297, 'F');
-            
-            // Garis dekoratif atas
-            doc.setFillColor(merahTua[0], merahTua[1], merahTua[2]);
-            doc.rect(0, 0, 210, 8, 'F');
-            doc.setFillColor(merahSedang[0], merahSedang[1], merahSedang[2]);
-            doc.rect(0, 8, 210, 3, 'F');
-
-            // Header
-            doc.setFontSize(28);
-            doc.setTextColor(merahTua[0], merahTua[1], merahTua[2]);
-            doc.setFont('helvetica', 'bold');
-            doc.text('YONO TEKNIK', 105, 35, { align: 'center' });
-            
-            doc.setFontSize(20);
-            doc.setTextColor(merahSedang[0], merahSedang[1], merahSedang[2]);
-            doc.text('INDONESIA', 105, 47, { align: 'center' });
-
-            // Garis dekoratif
-            doc.setDrawColor(merahMuda[0], merahMuda[1], merahMuda[2]);
-            doc.setLineWidth(0.5);
-            doc.line(30, 55, 180, 55);
-
-            // Title
-            doc.setFontSize(18);
-            doc.setTextColor(merahTua[0], merahTua[1], merahTua[2]);
-            doc.setFont('helvetica', 'bold');
-            doc.text('LAPORAN DATA FORM', 105, 70, { align: 'center' });
-
-            // Nomor dan tanggal
-            doc.setFontSize(10);
-            doc.setTextColor(100, 100, 100);
-            doc.text(`No. Form : YTI/${new Date().getTime().toString().slice(-8)}/${new Date().getFullYear()}`, 20, 85);
-            doc.text(`Tanggal : ${new Date().toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}`, 20, 92);
-
-            // Kotak data
-            doc.setDrawColor(merahMuda[0], merahMuda[1], merahMuda[2]);
-            doc.setLineWidth(0.3);
-            doc.rect(20, 105, 170, 120);
-
-            // Header kotak data
-            doc.setFillColor(merahTua[0], merahTua[1], merahTua[2]);
-            doc.rect(20, 105, 170, 12, 'F');
-            doc.setFontSize(12);
-            doc.setTextColor(255, 255, 255);
-            doc.text('DATA LENGKAP', 105, 114, { align: 'center' });
-
-            // Isi data
-            doc.setFontSize(11);
-            doc.setTextColor(50, 50, 50);
-            
-            let y = 125;
-            const lineHeight = 9;
-
-            // Nama
-            doc.setFont('helvetica', 'bold');
-            doc.setTextColor(merahTua[0], merahTua[1], merahTua[2]);
-            doc.text('Nama Lengkap', 30, y);
-            doc.setFont('helvetica', 'normal');
-            doc.setTextColor(0, 0, 0);
-            doc.text(': ' + name, 70, y);
-            y += lineHeight;
-
-            // Email
-            doc.setFont('helvetica', 'bold');
-            doc.setTextColor(merahTua[0], merahTua[1], merahTua[2]);
-            doc.text('Email', 30, y);
-            doc.setFont('helvetica', 'normal');
-            doc.setTextColor(0, 0, 0);
-            doc.text(': ' + email, 70, y);
-            y += lineHeight;
-
-            // Negara
-            doc.setFont('helvetica', 'bold');
-            doc.setTextColor(merahTua[0], merahTua[1], merahTua[2]);
-            doc.text('Negara', 30, y);
-            doc.setFont('helvetica', 'normal');
-            doc.setTextColor(0, 0, 0);
-            doc.text(': ' + country, 70, y);
-            y += lineHeight;
-
-            // Link
-            doc.setFont('helvetica', 'bold');
-            doc.setTextColor(merahTua[0], merahTua[1], merahTua[2]);
-            doc.text('Link', 30, y);
-            doc.setFont('helvetica', 'normal');
-            doc.setTextColor(0, 0, 255);
-            
-            // Split link jika panjang
-            const splitLink = doc.splitTextToSize(linkUrl, 100);
-            doc.text(splitLink, 70, y);
-            y += (splitLink.length * lineHeight) + 2;
-
-            // Pesan
-            doc.setFont('helvetica', 'bold');
-            doc.setTextColor(merahTua[0], merahTua[1], merahTua[2]);
-            doc.text('Pesan', 30, y);
-            doc.setFont('helvetica', 'normal');
-            doc.setTextColor(0, 0, 0);
-            
-            // Split pesan jika panjang
-            const splitMessage = doc.splitTextToSize(message, 100);
-            doc.text(splitMessage, 70, y + 2);
-
-            // ===== HALAMAN 2 UNTUK QR CODE =====
-            doc.addPage();
-
-            // Background halaman 2
-            doc.setFillColor(255, 250, 250);
-            doc.rect(0, 0, 210, 297, 'F');
-
-            // Header halaman 2
-            doc.setFillColor(merahTua[0], merahTua[1], merahTua[2]);
-            doc.rect(0, 0, 210, 10, 'F');
-            
-            doc.setFontSize(20);
-            doc.setTextColor(merahTua[0], merahTua[1], merahTua[2]);
-            doc.setFont('helvetica', 'bold');
-            doc.text('QR CODE DARI LINK', 105, 30, { align: 'center' });
-
-            // Kotak QR Code
-            doc.setDrawColor(merahSedang[0], merahSedang[1], merahSedang[2]);
-            doc.setLineWidth(1);
-            doc.rect(45, 50, 120, 120);
-
-            // Tambah QR Code
-            doc.addImage(qrCodeUrl, 'PNG', 50, 55, 110, 110);
-
-            // Teks di bawah QR
-            doc.setFontSize(14);
-            doc.setTextColor(merahTua[0], merahTua[1], merahTua[2]);
-            doc.setFont('helvetica', 'bold');
-            doc.text('Scan QR Code untuk Membuka Link', 105, 185, { align: 'center' });
-
-            // Informasi Link
-            doc.setFontSize(12);
-            doc.setTextColor(merahSedang[0], merahSedang[1], merahSedang[2]);
-            doc.text('Link yang diencode:', 105, 205, { align: 'center' });
-            
-            doc.setFontSize(10);
-            doc.setTextColor(0, 0, 255);
-            doc.setFont('helvetica', 'normal');
-            
-            // Tampilkan link di PDF
-            const displayLink = doc.splitTextToSize(linkUrl, 160);
-            doc.text(displayLink, 105, 220, { align: 'center' });
-
-            // Petunjuk scan
-            doc.setFontSize(10);
-            doc.setTextColor(merahTua[0], merahTua[1], merahTua[2]);
-            doc.setFont('helvetica', 'italic');
-            doc.text('Gunakan kamera HP untuk scan QR Code', 105, 250, { align: 'center' });
-
-            // ===== FOOTER =====
-            for (let i = 1; i <= doc.getNumberOfPages(); i++) {
-                doc.setPage(i);
+                // ===== HALAMAN 1 =====
+                doc.setFillColor(255, 250, 250);
+                doc.rect(0, 0, 210, 297, 'F');
                 
-                // Garis footer
-                doc.setDrawColor(merahMuda[0], merahMuda[1], merahMuda[2]);
-                doc.setLineWidth(0.3);
-                doc.line(20, 270, 190, 270);
+                // Header
+                doc.setFillColor(139, 0, 0);
+                doc.rect(0, 0, 210, 10, 'F');
                 
-                // Teks footer
-                doc.setFontSize(9);
-                doc.setTextColor(100, 100, 100);
-                doc.text('Dokumen ini digenerate secara otomatis oleh', 105, 280, { align: 'center' });
-                
+                doc.setFontSize(28);
+                doc.setTextColor(139, 0, 0);
                 doc.setFont('helvetica', 'bold');
-                doc.setTextColor(merahTua[0], merahTua[1], merahTua[2]);
-                doc.text('YONO TEKNIK INDONESIA', 105, 285, { align: 'center' });
+                doc.text('YONO TEKNIK', 105, 30, { align: 'center' });
                 
-                // Nomor halaman
-                doc.setFontSize(8);
-                doc.setTextColor(150, 150, 150);
-                doc.text(`Halaman ${i} dari ${doc.getNumberOfPages()}`, 105, 292, { align: 'center' });
-            }
+                doc.setFontSize(20);
+                doc.setTextColor(178, 34, 34);
+                doc.text('INDONESIA', 105, 42, { align: 'center' });
 
-            // Simpan PDF
-            doc.save(`YonoTeknik_${name.replace(/\s+/g, '_')}_${new Date().getTime()}.pdf`);
+                // Garis
+                doc.setDrawColor(205, 92, 92);
+                doc.setLineWidth(0.5);
+                doc.line(30, 50, 180, 50);
+
+                // Title
+                doc.setFontSize(18);
+                doc.setTextColor(139, 0, 0);
+                doc.text('LAPORAN DATA FORM', 105, 65, { align: 'center' });
+
+                // Nomor dan tanggal
+                doc.setFontSize(10);
+                doc.setTextColor(100, 100, 100);
+                doc.text(`No. Form : YTI/${new Date().getTime().toString().slice(-8)}/${new Date().getFullYear()}`, 20, 80);
+                doc.text(`Tanggal : ${new Date().toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}`, 20, 87);
+
+                // Data
+                let y = 105;
+                const lineHeight = 10;
+
+                doc.setFontSize(12);
+                
+                // Fungsi untuk menulis data dengan wrapping
+                function writeField(label, value, startY) {
+                    doc.setTextColor(139, 0, 0);
+                    doc.setFont('helvetica', 'bold');
+                    doc.text(label, 30, startY);
+                    
+                    doc.setTextColor(0, 0, 0);
+                    doc.setFont('helvetica', 'normal');
+                    
+                    var lines = doc.splitTextToSize(value, 120);
+                    doc.text(lines, 70, startY);
+                    
+                    return startY + (lines.length * lineHeight);
+                }
+
+                y = writeField('Nama:', name, y);
+                y = writeField('Email:', email, y);
+                y = writeField('Negara:', country, y);
+                y = writeField('Link:', linkUrl, y);
+                y = writeField('Pesan:', message || '-', y);
+
+                // ===== HALAMAN 2 UNTUK QR CODE =====
+                doc.addPage();
+                
+                // Background
+                doc.setFillColor(255, 250, 250);
+                doc.rect(0, 0, 210, 297, 'F');
+
+                // Header
+                doc.setFillColor(139, 0, 0);
+                doc.rect(0, 0, 210, 10, 'F');
+                
+                doc.setFontSize(24);
+                doc.setTextColor(139, 0, 0);
+                doc.setFont('helvetica', 'bold');
+                doc.text('QR CODE', 105, 30, { align: 'center' });
+
+                // Informasi
+                doc.setFontSize(14);
+                doc.setTextColor(178, 34, 34);
+                doc.text('Scan QR Code di bawah ini:', 105, 50, { align: 'center' });
+                
+                doc.setFontSize(11);
+                doc.setTextColor(0, 0, 0);
+                var linkLines = doc.splitTextToSize('Link: ' + linkUrl, 160);
+                doc.text(linkLines, 105, 65, { align: 'center' });
+
+                // Buat QR Code sebagai gambar dengan pendekatan berbeda
+                var qrImageUrl = generateQRCode(linkUrl);
+                
+                // Download gambar QR Code terlebih dahulu
+                try {
+                    const response = await fetch(qrImageUrl);
+                    const blob = await response.blob();
+                    const reader = new FileReader();
+                    
+                    reader.onloadend = function() {
+                        const base64data = reader.result;
+                        
+                        // Tambahkan QR Code ke PDF
+                        doc.addImage(base64data, 'PNG', 55, 80, 100, 100);
+                        
+                        // Tambahkan teks petunjuk
+                        doc.setFontSize(10);
+                        doc.setTextColor(139, 0, 0);
+                        doc.setFont('helvetica', 'italic');
+                        doc.text('Gunakan kamera HP untuk scan QR Code', 105, 190, { align: 'center' });
+                        
+                        // Footer untuk halaman 1
+                        doc.setPage(1);
+                        doc.setDrawColor(205, 92, 92);
+                        doc.setLineWidth(0.3);
+                        doc.line(20, 280, 190, 280);
+                        doc.setFontSize(9);
+                        doc.setTextColor(100, 100, 100);
+                        doc.text('Dokumen ini digenerate oleh YONO TEKNIK INDONESIA', 105, 290, { align: 'center' });
+                        
+                        // Footer untuk halaman 2
+                        doc.setPage(2);
+                        doc.setDrawColor(205, 92, 92);
+                        doc.line(20, 280, 190, 280);
+                        doc.setFontSize(9);
+                        doc.setTextColor(100, 100, 100);
+                        doc.text('Dokumen ini digenerate oleh YONO TEKNIK INDONESIA', 105, 290, { align: 'center' });
+                        
+                        // Simpan PDF
+                        doc.save(`YonoTeknik_${name.replace(/\s+/g, '_')}.pdf`);
+                        alert('PDF berhasil didownload!');
+                    };
+                    
+                    reader.readAsDataURL(blob);
+                    
+                } catch (error) {
+                    console.error('Error loading QR Code:', error);
+                    
+                    // Fallback: tampilkan link saja
+                    doc.setFontSize(12);
+                    doc.setTextColor(139, 0, 0);
+                    doc.text('QR Code tidak dapat dimuat.', 105, 140, { align: 'center' });
+                    doc.text('Silakan buka link berikut:', 105, 155, { align: 'center' });
+                    
+                    doc.setTextColor(0, 0, 255);
+                    doc.setFont('helvetica', 'underline');
+                    var linkLines = doc.splitTextToSize(linkUrl, 150);
+                    doc.text(linkLines, 105, 170, { align: 'center' });
+                    
+                    // Footer
+                    doc.setPage(1);
+                    doc.line(20, 280, 190, 280);
+                    doc.setFontSize(9);
+                    doc.setTextColor(100, 100, 100);
+                    doc.text('Dokumen ini digenerate oleh YONO TEKNIK INDONESIA', 105, 290, { align: 'center' });
+
+                    doc.setPage(2);
+                    doc.line(20, 280, 190, 280);
+                    doc.text('Dokumen ini digenerate oleh YONO TEKNIK INDONESIA', 105, 290, { align: 'center' });
+                    
+                    doc.save(`YonoTeknik_${name.replace(/\s+/g, '_')}.pdf`);
+                    alert('PDF berhasil didownload (tanpa QR Code, hanya link)');
+                }
+                
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Terjadi kesalahan saat membuat PDF. Silakan coba lagi.');
+            }
         }
 
-        // Event listener untuk realtime preview
+        // Preview real-time
         document.querySelectorAll('.name, .email, .country, .lokasi, .message').forEach(input => {
             input.addEventListener('input', function() {
                 if (document.getElementById('dataPreview').style.display === 'block') {
-                    updatePreview(
-                        document.querySelector(".name").value,
-                        document.querySelector(".email").value,
-                        document.querySelector(".country").value,
-                        document.querySelector(".lokasi").value,
-                        document.querySelector(".message").value
-                    );
+                    document.getElementById('previewName').textContent = document.querySelector(".name").value || '-';
+                    document.getElementById('previewEmail').textContent = document.querySelector(".email").value || '-';
+                    document.getElementById('previewCountry').textContent = document.querySelector(".country").value || '-';
+                    document.getElementById('previewLokasi').textContent = document.querySelector(".lokasi").value || '-';
+                    document.getElementById('previewMessage').textContent = document.querySelector(".message").value || '-';
                 }
             });
         });
 
-        // Hilangkan error border saat user mulai mengetik
-        document.querySelectorAll('input, textarea').forEach(input => {
-            input.addEventListener('input', function() {
-                this.style.borderColor = "#ffe5e5";
-            });
+        // Tambahkan event listener untuk tombol PDF dengan loading state
+        document.querySelector('.btn-secondary').addEventListener('click', function() {
+            this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Memproses...';
+            this.disabled = true;
+            
+            // Kembalikan tombol setelah beberapa detik
+            setTimeout(() => {
+                this.innerHTML = '<i class="fas fa-file-pdf"></i> Download PDF';
+                this.disabled = false;
+            }, 3000);
         });
     </script>
 </body>
